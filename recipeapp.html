@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>food recipe app</title>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    
+ 
+  </head>
+  <body>
+    
+  
+    <header>
+      <nav> 
+      <h1> Recipe app</h1> 
+      <form>
+       <input type="text" name="searchBox" id="searchBox" placeholder="search to the recipe.." value="" /> 
+       
+       <button type="submit"  id="searchBtn">search</button>
+      </form>
+      </nav>
+    </header>
+    
+    
+   <article class="preloader">
+
+      </article>
+    <main>
+      
+      <section>
+        <div class="recipes_container">
+        
+        
+      <h3 class="errormsg"> error msg</h3>
+      
+        </div>
+        
+        <div class="recipe_details">
+           <i class="fas fa-window-close recipeCloseBtn"></i>
+           
+           <div class="recipe_content">
+        </div> 
+        
+        </div>
+        
+      </section>
+   
+   
+    </main>
+    
+    
+ <script src="app.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script type="text/javascript" charset="utf-8">
+    const preloader = document.querySelector(".preloader");
+window.onload = ()=>{
+
+    preloader.classList.add("preloader_hidden");
+}
+  </script>
+  
+  
+   </body>
+  
+</html>
